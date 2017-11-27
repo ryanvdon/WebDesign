@@ -1,0 +1,205 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+a {
+	color: grey;
+	text-decoration: none;
+}
+
+a:active {
+	color: black;
+}
+
+a:hover {
+	color: black;
+}
+
+a.focus {
+	color: black;
+}
+
+img {
+	overflow: auto;
+}
+
+col {
+	overflow: auto;
+}
+
+h3 {
+	text-transform: uppercase;
+	font-weight: thin;
+	font-size: .8rem;
+}
+
+div {
+	margin: auto;
+}
+
+input {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.heading {
+	font-size: 150%;
+	font-weight: 100;
+	text-transform: uppercase;
+	text-align:center;
+	margin: auto;
+}
+
+.navbar {
+	display: block;
+	margin: auto;
+	text-align: center;
+	text-transform: uppercase;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+}
+
+.navbar ul {
+	margin: auto;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {	
+	width: 100px;
+	display: inline-block;
+	padding: 8px;
+}
+
+.heroimage {
+	position: relative;
+	margin: auto;
+	overflow: hidden;
+	max-height: 600px
+}
+
+.heroimage3 {
+	position: relative;
+	margin: auto;
+	overflow: hidden;
+	max-height: 300px
+}
+
+.textright {
+	position: absolute;
+	bottom: 12px;
+    right: 20px;
+}
+
+.textoverlay {
+	text-transform: uppercase;
+	color: white;
+	font-size: 3rem;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero2 {
+	text-align: center;
+	height: 30vh;
+	margin: auto;
+	padding: 3em;
+	overflow: auto;
+}
+
+.heroimage2 {
+	margin: auto;
+	overflow: hidden;
+}
+
+.about {
+	max-width: 60vw;
+	margin: auto;
+	padding: 3em;
+}
+
+.recent {
+	max-width: 60vw;
+	margin: auto;
+	padding: 3em;
+}
+
+.contact {
+	text-align: center;
+	max-width: 30vw;
+	margin: auto;
+	padding: 3em;
+}
+
+.wide {
+	padding: 2em;
+	display: inline-block;
+    max-width: 40vw;
+}
+
+.narrow {
+	padding: 2em;
+	display: inline-block;
+	max-width: 20vw;
+}
+
+.prof {
+	width: 10vw;
+}
+
+.section {
+	background-color: #ffffff;
+	padding-top: 2em;
+	padding-bottom: 3em;
+	margin: auto;
+}
+
+.section2 {
+	background-color: #f2f2f2;
+	padding-top: 2em;
+	padding-bottom: 3em;
+}
+
+.row {
+	margin: auto;
+	text-align: center;
+}
+
+.merch {
+	margin: auto;
+
+}
+
+.row ul {
+	margin: auto;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.merch ul {
+	margin: auto;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.row ul li {
+	display: inline-block;
+	padding: 0px;
+}
+
+.merch ul li {
+	display: inline-block;
+	padding: 0px;
+}
+
+.form {
+	text-align: left;
+}
