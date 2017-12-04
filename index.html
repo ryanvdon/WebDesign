@@ -6,74 +6,86 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
 </head>
 <body>
-	<header>
+	<div>
 		<div class="heading">
 			<h1>Ryan Van Dongen</h1>
 		</div>
-		<div class="navbar">
-			<ul>
-				<li><a class="focus" href="index.html">Home</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="merch.html">Merch</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</div>
-	</header>
-	<section class="hero">
+	</div>
+	<div class="navbar">
+		<ul>
+			<li><a class="focus" href="index.html">Home</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="merch.html">Merch</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+	<div class="hero">
 		<div class="heroimage">
 			<img src="images/hero.jpg">
 			<div class="textright">A Quiet Winter - Artwork from 2016</div>
 		</div>
-	</section>
+	</div>
 	<div class="section">
 		<div class="about">
 			<div class="wide">
 				<h3>About Me</h3>
 				<p>I am a concept artist and illustrator based in Philadelphia, PA, and currently attending Drexel 	University. </p>
-				<p>Check me out on <a href="https://www.instagram.com/ryanvandongen/">Instagram</a>, <a href="https://www.youtube.com/channel/UCLQk-Rgh7WLd8LrzA7SYqYg?view_as=subscriber">Youtube</a>, <a href="https://www.redbubble.com/people/ryanvandongen/portfolio">Redbubble</a>, <a href="https://www.artstation.com/ryan">Arststation</a>, <a href="https://www.facebook.com/ryan.vandongen1">Facebook</a>, and <a href="https://twitter.com/ryanjvandongen?lang=en">Twitter</a>.</p>
+				<p>Check me out on <a href="https://www.instagram.com/ryanvandongen/">Instagram</a>, <a href="https://www.youtube.com/channel/UCLQk-Rgh7WLd8LrzA7SYqYg?view_as=subscriber">Youtube</a>, <a href="https://www.redbubble.com/people/ryanvandongen/portfolio">Redbubble</a>, <a href="https://www.artstation.com/ryan">Artstation</a>, <a href="https://www.facebook.com/ryan.vandongen1">Facebook</a>, and <a href="https://twitter.com/ryanjvandongen?lang=en">Twitter</a>.</p>
 			</div>
 			<div class="narrow">
 				<img src="images/prof.jpeg" class="prof">	
 			</div>
 		</div>
 	</div>
-	<div class="section2">
+	<div class="section2" >
 		<div class="recent">
 			<div class="narrow">
 				<h3>Portfolio</h3>
 				<h2>Recent Projects</h2>
-				<p><a href="https://www.youtube.com/watch?v=gh4ZscKHGrs">See the making of the Man-Chicken (SCP-3199) on Youtube</a></p>
-				<a class="button">View Portfolio</a>
+				<p><a href="https://www.youtube.com/watch?v=xR0_2yISfHs">See the making of the Angry Robot on Youtube</a></p>
+				<a href="portfolio.html" class="button">View Portfolio</a>
 			</div>
 			<div class="wide">
 				<div class="row">
 					<ul>
-						<li><img src="images/1.jpg" width="150"></li>
-						<li><img src="images/2.jpg" width="150"></li>
-						<li><img src="images/3.jpg" width="150"></li>
+						<li><a href="#i1" class="thumbnail"><img src="images/1.jpg" width="150"></a></li>
+						<li><a href="#i2" class="thumbnail"><img src="images/2.jpg" width="150"></a></li>
+						<li><a href="#i3" class="thumbnail"><img src="images/3.jpg" width="150"></a></li>
 					</ul>
 					<ul>
-						<li><img src="images/4.jpg" width="150"></li>
-						<li><img src="images/5.jpg" width="150"></li>
-						<li><img src="images/6.jpg" width="150"></li>
+						<li><a href="#i4" class="thumbnail"><img src="images/4.jpg" width="150"></a></li>
+						<li><a href="#i5" class="thumbnail"><img src="images/5.jpg" width="150"></a></li>
+						<li><a href="#i6" class="thumbnail"><img src="images/6.jpg" width="150"></a></li>
 					</ul>
 			</div>
 		</div>
 	</div>
-	<section class="section">
-		<div class="contact">
+	<a href="#_" class="lightbox" id="i1">
+  		<img src="images/i1.jpg">
+	</a>
+	<a href="#_" class="lightbox" id="i2">
+  		<img src="images/i2.jpg">
+	</a>
+	<a href="#_" class="lightbox" id="i3">
+  		<img src="images/i3.png">
+	</a>
+	<a href="#_" class="lightbox" id="i4">
+  		<img src="images/i4.jpg">
+	</a>
+	<a href="#_" class="lightbox" id="i5">
+  		<img src="images/i5.jpg">
+	</a>
+	<a href="#_" class="lightbox" id="i6">
+  		<img src="images/i6.png">
+	</a>
+	<div class="section">
+		<div class="contact2">
+			<div class="contactform">
 			<h3>Contact Me</h3>
 			<h2>Get in Touch!</h2>
-			<div class="form">
-				<form>
-				<label for="email">Email Address *</label>
-				<input type="text" name="Email Address" id="email">
-				<br>
-				<label for="message">Message *</label>
-				<textarea id="message"></textarea>
-				<br>
-				<input type="submit" name="submit">
-				</form>
+				<div>
+					<a href="mailto:ryanvdon@gmail.com" class="button">Send Me an Email</a>
+				</div>
 			</div>
 		</div>
 	</section>

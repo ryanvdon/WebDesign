@@ -36,11 +36,22 @@ h3 {
 
 div {
 	margin: auto;
+
 }
 
 input {
 	display: inline-block;
 	margin-bottom: 10px;
+	width: 100%;
+	padding: 5px 10px;
+}
+
+textarea {
+	width: 100%;
+    height: 150px;
+    padding: 5px 10px;
+    background-color: #f8f8f8;
+    resize: none;
 }
 
 .heading {
@@ -52,13 +63,16 @@ input {
 }
 
 .navbar {
+	position: sticky;
+	top: 0;
+	background-color: white;
 	display: block;
 	margin: auto;
 	text-align: center;
 	text-transform: uppercase;
 	position: sticky;
-	position: -webkit-sticky;
 	top: 0;
+	z-index: 9999;
 }
 
 .navbar ul {
@@ -74,11 +88,17 @@ input {
 	padding: 8px;
 }
 
+.hero {
+	z-index: 0;
+}
+
 .heroimage {
-	position: relative;
+	z-index: 0;
+	position: sticky;
+	top: 0;
 	margin: auto;
 	overflow: hidden;
-	max-height: 600px
+	height: 75vh;
 }
 
 .heroimage3 {
@@ -92,6 +112,7 @@ input {
 	position: absolute;
 	bottom: 12px;
     right: 20px;
+    color: white;
 }
 
 .textoverlay {
@@ -118,34 +139,53 @@ input {
 }
 
 .about {
-	max-width: 60vw;
+	max-width: 70vw;
 	margin: auto;
 	padding: 3em;
+	text-align: center;
 }
 
 .recent {
-	max-width: 60vw;
+	max-width: 70vw;
+	margin: auto;
+	padding: 3em;
+	text-align: center;
+}
+
+.contact {
+	text-align: left;
+	width: 40vw;
+	max-width: 70vw;
 	margin: auto;
 	padding: 3em;
 }
 
-.contact {
+.contact2 {
 	text-align: center;
-	max-width: 30vw;
 	margin: auto;
 	padding: 3em;
+	background-image: url("images/i10.jpg");
+	color: white;
+}
+
+.contactform {
+	max-width: 50vw;
+	margin: auto;
+	padding: 50px 0px;
 }
 
 .wide {
 	padding: 2em;
 	display: inline-block;
-    max-width: 40vw;
+    width: 40vw;
+    text-align: left;
 }
 
 .narrow {
 	padding: 2em;
 	display: inline-block;
-	max-width: 20vw;
+	width: 20vw;
+	text-align: left;
 }
 
 .prof {
@@ -171,11 +211,14 @@ input {
 }
 
 .merch {
+	text-align: center;
 	margin: auto;
 
 }
 
 .row ul {
+
+	text-align: center;
 	margin: auto;
 	list-style-type: none;
     margin: 0;
@@ -202,4 +245,78 @@ input {
 
 .form {
 	text-align: left;
+}
+
+.lightbox {
+	display: none;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+	max-width: 90%;
+	max-height: 90%;
+	margin-top: 2%;
+}
+
+
+.lightbox:target {
+	outline: none;
+	display: block;
+}
+
+.thumbnail img {
+	-webkit-filter: brightness(80%);
+	filter: brightness(80%);
+	-webkit-transition: all 1s ease;
+       -moz-transition: all 1s ease;
+         -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+            transition: all 1s ease;
+}
+ 
+.thumbnail img:hover {
+  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
+  box-shadow: 1px 4px 8px rgba(0,0,0,0.5);
+}
+
+.button {
+	display: inline-block;
+	padding: 10px 30px;
+	text-align: center;
+	margin: 10px 0px;
+	color: white;
+	border: 0px solid;
+	background-color: black;
+		-webkit-transition: all 1s ease;
+       -moz-transition: all 1s ease;
+         -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+            transition: all 1s ease;
+}
+
+.button:hover {
+	color: white;
+	background-color: #666666;
+}
+
+.resume {
+	text-align: left;
+}
+
+.resume ul li {
+	width: 350px;
+	text-align: left;
+}
+
+.resume ul li h4 {
+	padding-right: 3em;
+	text-align: right;
 }
