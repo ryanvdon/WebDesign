@@ -1,3 +1,26 @@
+@font-face {
+	font-family: 'Lato';
+	src: url(fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url(fonts/Lato-Bold.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url(fonts/Lato-Light.ttf);
+	font-weight: lighter;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url(fonts/Lato-Hairline.ttf);
+	font-weight: thin;
+}
+
 * {
 	box-sizing: border-box;
 	font-family: 'Lato', sans-serif;
@@ -28,9 +51,12 @@ col {
 	overflow: auto;
 }
 
+h1 {
+	font-weight: thin;
+}
+
 h3 {
 	text-transform: uppercase;
-	font-weight: thin;
 	font-size: .8rem;
 }
 
@@ -56,7 +82,7 @@ textarea {
 
 .heading {
 	font-size: 150%;
-	font-weight: 100;
+	font-weight: thin;
 	text-transform: uppercase;
 	text-align:center;
 	margin: auto;
@@ -275,10 +301,7 @@ textarea {
 	-webkit-filter: brightness(80%);
 	filter: brightness(80%);
 	-webkit-transition: all 1s ease;
-       -moz-transition: all 1s ease;
-         -o-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-            transition: all 1s ease;
+    transition: all 1s ease;
 }
  
 .thumbnail img:hover {
@@ -295,11 +318,8 @@ textarea {
 	color: white;
 	border: 0px solid;
 	background-color: black;
-		-webkit-transition: all 1s ease;
-       -moz-transition: all 1s ease;
-         -o-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-            transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 .button:hover {
