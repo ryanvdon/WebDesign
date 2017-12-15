@@ -136,6 +136,7 @@ textarea {
 }
 
 .heroimage {
+	text-align: center;
 	z-index: 0;
 	top: 0;
 	margin: auto;
@@ -144,6 +145,7 @@ textarea {
 }
 
 .heroimage3 {
+	text-align: center;
 	position: relative;
 	margin: auto;
 	overflow: hidden;
