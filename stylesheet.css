@@ -43,6 +43,10 @@ a.focus {
 	color: black;
 }
 
+body {
+	margin: 0;
+}
+
 img {
 	overflow: auto;
 }
@@ -57,7 +61,7 @@ h1 {
 
 h3 {
 	text-transform: uppercase;
-	font-size: .8rem;
+	font-size: 1rem;
 }
 
 div {
@@ -80,6 +84,111 @@ textarea {
     resize: none;
 }
 
+ul {
+	padding: 0;
+}
+
+.about {
+	grid-area: about;
+	margin: auto;
+	padding: 3em;
+}
+
+.about-image {
+	grid-area: me-image;
+}
+
+.big-image {
+	width: 90 vh;
+}
+
+.flexbox {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.flex-item {
+	list-style-type: none;
+}
+
+.gallery {
+	grid-area: gallery;
+ 	display: grid;
+ 	grid-template-columns: 1fr 1fr 1fr 1fr;
+ 	grid-template-rows: 157px;
+ 	grid-column-gap: .5rem;
+ 	grid-row-gap: .5rem;
+}
+
+.heroimage {
+	text-align: center;
+	z-index: 0;
+	top: 0;
+	margin: auto;
+	overflow: hidden;
+	height: 90vh;
+}
+
+.nav {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 2em;
+}
+
+.recent {
+	padding: 3em;
+	text-align: center;
+	display: grid;
+	justify-content: center;
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "main gallery gallery";
+ 	margin: 3rem auto;
+    text-align: right;
+}
+
+.recent-main {
+	grid-area: main;
+	margin-right: 2em;
+}
+
+.section {
+	background-color: #ffffff;
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+	margin: auto;
+	display: grid;
+	justify-content: center;
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "me-image about about";
+ 	margin: 3rem auto;
+    text-align: left;
+}
+
+.section2 {
+	background-color: #c9cddf;
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+	box-shadow: 3px 7px 10px rgba(0,0,0,0.8);
+}
+
+.thumbnail img {
+	-webkit-filter: brightness(80%);
+	filter: brightness(80%);
+	-webkit-transition: all 1s ease;
+    transition: all 0.5s ease;
+}
+ 
+.thumbnail img:hover {
+  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
+  box-shadow: 1px 4px 8px rgba(0,0,0,0.5);
+}
+
 .heading {
 	font-size: 150%;
 	font-weight: 300;
@@ -92,9 +201,9 @@ textarea {
 	position: sticky;
 	top: 0;
 	background-color: white;
-	display: block;
+	display: flex;
+	justify-content: center;
 	margin: auto;
-	text-align: center;
 	text-transform: uppercase;
 	top: 0;
 	z-index: 998;
@@ -123,25 +232,14 @@ textarea {
 .social {
 	margin: auto;
 	list-style-type: none;
+	display: flex;
+	flex: end;
 }
 
 .social li {
 	width: 24px;
 	display: inline-block;
 	padding: 2px 4px;
-}
-
-.hero {
-	z-index: 0;
-}
-
-.heroimage {
-	text-align: center;
-	z-index: 0;
-	top: 0;
-	margin: auto;
-	overflow: hidden;
-	height: 75vh;
 }
 
 .heroimage3 {
@@ -182,19 +280,9 @@ textarea {
 	overflow: hidden;
 }
 
-.about {
-	width: 70vw;
-	margin: auto;
-	padding: 3em;
-	text-align: center;
-}
 
-.recent {
-	width: 70vw;
-	margin: auto;
-	padding: 3em;
-	text-align: center;
-}
+
+
 
 .contact {
 	text-align: left;
@@ -232,13 +320,6 @@ textarea {
 	text-align: left;
 }
 
-.wideimages {
-	padding: 2em;
-	display: inline-block;
-    width: 40vw;
-    text-align: right;
-}
-
 .narrowimages {
 	padding: 2em;
 	display: inline-block;
@@ -251,18 +332,7 @@ textarea {
 	width: 10vw;
 }
 
-.section {
-	background-color: #ffffff;
-	padding-top: 2em;
-	padding-bottom: 3em;
-	margin: auto;
-}
 
-.section2 {
-	background-color: #f2f2f2;
-	padding-top: 2em;
-	padding-bottom: 3em;
-}
 
 .row {
 	margin: auto;
@@ -347,19 +417,6 @@ textarea {
 .lightbox:target {
 	outline: none;
 	display: block;
-}
-
-.thumbnail img {
-	-webkit-filter: brightness(80%);
-	filter: brightness(80%);
-	-webkit-transition: all 1s ease;
-    transition: all 1s ease;
-}
- 
-.thumbnail img:hover {
-  -webkit-filter: brightness(100%);
-  filter: brightness(100%);
-  box-shadow: 1px 4px 8px rgba(0,0,0,0.5);
 }
 
 .button {
